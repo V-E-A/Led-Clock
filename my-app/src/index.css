@@ -1,4 +1,81 @@
-body {
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 
+  }
+
+
+@media (min-width: 1281px) {
+  
 }
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+      body{   letter-spacing: 3px;
+        line-height: 1.5;
+        font-weight: 600;
+    
+        font-size: 2.1rem;
+    }
+ 
+  }
 
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    body{   letter-spacing: 3px;
+        line-height: 1.5;
+        font-weight: 600;
+    
+        font-size: 2rem;
+    }
+    
+  }
+  
+ 
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    body{   letter-spacing: 3px;
+        line-height: 1.5;
+        font-weight: 600;
+    
+        font-size: 1.5rem;
+    }
+    
+  }
+  
+
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    body{   letter-spacing: 3px;
+        line-height: 1.5;
+        font-weight: 600;
+    
+        font-size: 1.3rem;
+    }
+    
+  }
+  
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    body{   letter-spacing: 3px;
+        line-height: 1.5;
+        font-weight: 600;
+    
+        font-size: 0.9rem;
+    }
+    
+  }

@@ -3,13 +3,13 @@ import styled from "@emotion/styled/macro";
 
 function Text(props) {
   const TextSpan = styled.div`
-    color: ${props.lit ? `blue` : `red`};
+    color: ${props.lit ? `white` : `gray`};
   `;
 
   return (
-    <div>
+    <>
       <TextSpan>{props.text}</TextSpan>
-    </div>
+    </>
   );
 }
 

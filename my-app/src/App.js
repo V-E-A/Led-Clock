@@ -1,5 +1,6 @@
 import Clock from "./Clock.js";
 import React, { Component } from "react";
+// import styled from "@emotion/styled/macro";
 let moment = require("moment");
 
 class App extends Component {
@@ -29,12 +30,13 @@ class App extends Component {
     let timeSection = Math.floor(minutes / 5);
     let interval = this.state.fiveMinIntervals[timeSection];
     let singleMinutes = minutes - interval
+    let hour = minutes < 30 ? this.state.hour : this.state.hour + 1
  
     return (
       <div>
         <Clock
           timeSection={timeSection}
-          hour={this.state.hour}
+          hour={hour}
           singleMinutes={singleMinutes}
         />
       </div>
@@ -43,3 +45,14 @@ class App extends Component {
 }
 
 export default App;
+
+// const ClockFrame = styled.div`
+// margin:0px auto;
+// width: 600px;
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+// align-content: center;
+// justify-content: center;
+  
+// `;
