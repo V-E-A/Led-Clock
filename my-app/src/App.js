@@ -1,9 +1,8 @@
 import Clock from "./Clock.js";
-import React, { Component } from "react";
-// import styled from "@emotion/styled/macro";
+import React from "react";
 let moment = require("moment");
 
-class App extends Component {
+class App extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,9 +28,9 @@ class App extends Component {
     let minutes = this.state.minutes;
     let timeSection = Math.floor(minutes / 5);
     let interval = this.state.fiveMinIntervals[timeSection];
-    let singleMinutes = minutes - interval
-    let hour = minutes < 30 ? this.state.hour : this.state.hour + 1
- 
+    let singleMinutes = minutes - interval;
+    let hour = timeSection <= 6 ? this.state.hour : this.state.hour + 1;
+
     return (
       <div>
         <Clock
@@ -45,14 +44,3 @@ class App extends Component {
 }
 
 export default App;
-
-// const ClockFrame = styled.div`
-// margin:0px auto;
-// width: 600px;
-// display: flex;
-// flex-direction: column;
-// align-items: center;
-// align-content: center;
-// justify-content: center;
-  
-// `;
