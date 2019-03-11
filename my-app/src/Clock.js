@@ -3,7 +3,6 @@ import React from "react";
 import styled from "@emotion/styled/macro";
 
 class Clock extends React.PureComponent {
-  
   render() {
     const { timeSection, hour, singleMinutes } = this.props;
 
@@ -146,11 +145,11 @@ const ClockFrame = styled.div`
   width: 80vmin;
   height: 80vmin;
   background: linear-gradient(
-    172deg,
-    rgb(255, 255, 255) -1%,
-    rgba(255, 255, 255, 0.15) 12%,
-    rgba(255, 255, 255, 0) 16%,
-    rgba(255, 255, 255, 0) 100%
+    180deg,
+    rgb(189, 189, 189) -3%,
+    rgba(202, 185, 185, 0.09) 7%,
+    rgba(228, 228, 228, 0) 0%,
+    rgba(0, 0, 0, 0) 100%
   );
   display: flex;
   flex-direction: column;

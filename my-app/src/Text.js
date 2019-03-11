@@ -9,7 +9,7 @@ function Text(props) {
 
     `};
     text-shadow: ${props.lit
-      ? `0 0 10px #FFF, 0px 0px 5px rgba(255,255,255,0.24)`
+      ? `0 0 10px #fff, 0 0 8px #ffffff57, 0px 0px 20px rgba(255, 255, 255, 0.29)`
       : `none`};
   `;
 
