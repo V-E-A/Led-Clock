@@ -1,3 +1,3 @@
 # Led Clock
 
-https://build-29o2vau8n.now.sh/
+https://build-fgdqrm3zj.now.sh/
